@@ -177,6 +177,28 @@
 	display: inherit;
 }
 
+/* ----------------------FAQ----------------- */
+.faq dt {
+	background: #eee url('../img/plus.png') 6px 6px no-repeat;
+	cursor: pointer;
+	width: 100%;
+	height: 30px;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	box-sizing: border-box;
+	padding: 6px 0 0 40px;
+	margin-top: 10px;
+}
+
+.faq dd {
+	border: 1px solid transparent;
+	color: #777;
+	display: none;
+}
+
 /*----------------------CLEARFIX------------------*/
 .clearfix:after {
     content: ".";
