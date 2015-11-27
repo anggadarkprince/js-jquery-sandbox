@@ -1,5 +1,10 @@
 @import url(normalize.css);
 
+.container {
+	width: 900px;
+	margin: 0 auto;
+}
+
 /*-------------- NAVIGATION ------------- */
 .main-nav {
 	background-color: #333;
@@ -45,7 +50,7 @@
 	top: 40px;
 	padding-left: 0;
 	width: 150px;
-    z-index: 9999;
+	z-index: 10000;
 }
 
 .dropdown li {
@@ -67,27 +72,72 @@
 
 .dropdown li a:hover { background-color: #777; }
 
-.thumbnail{
-	position: relative;
+
+/*---------------THUMBNAILS---------------*/
+.thumbs {
+	list-style: none;
+	padding-left: 0;
 }
 
-.container{
-    width: 900px;
-    margin: 20px auto;
+.thumbs li {
+	float: left;
+	width: 25%;
+	height: 140px;
 }
 
-.thumbs{
-    padding-left: 0;
+.thumbs li img {
+	width: 150px;
+	height: 101px;
+	padding: 3px;
+	border: 1px solid #ccc;
+	background-color: #fff;
 }
-.thumbs li{
-    list-style: none;
+
+/*--------------------GALLERY--------------*/
+.gallery {
+	clear: both;
+	margin-bottom: 10px;
+}
+
+.gallery div {
+	width: 420px;
+	height: 281px;
+	padding: 4px;
+	border: 1px solid #ccc;
+	float: left;
+}
+
+.img01 {
+	margin-right: 40px;
+	background: url("../img/blossoms-blur.jpg") 4px 4px no-repeat;
+}
+
+.img02 {
+	background: url("../img/flowers-blur.jpg") 4px 4px no-repeat;
+}
+
+.gallery div img {
+	display: none;
+}
+
+/*----------------------CLEARFIX------------------*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+.clearfix {
     display: inline-block;
-    width: 24%;
 }
-.thumbs li img{
-    width: 150px;
-    height: 101px;
-    padding: 3px;
-    border: 1px solid #ccc;
-    background-color: #fff;
+ 
+html[xmlns] .clearfix {
+    display: block;
+}
+ 
+* html .clearfix {
+    height: 1%;
 }
