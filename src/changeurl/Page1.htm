@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Page 1</title>
+</head>
+<body>
+
+<button class="foo">click here</button>
+<button class="foo2">click here 2</button>
+<input type="checkbox" name="checkbox">
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+    $(".foo").click(function() {
+      location.hash = "parameter1=123&parameter2=abc";
+	});
+	$(".foo2").click(function() {
+		  location.hash = "parameter1=987&parameter2=zyx";
+	});
+</script>
+<input type="button" value="Page1" id="button1" />
+<input type="button" value="Page2" id="button2" />
+<input type="button" value="Page3" id="button3" />
+</body>
+</html>
